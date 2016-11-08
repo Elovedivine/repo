@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<html>
+  <body>    
+    <p>Your Stundent ID</p>
+     <form>
+     <input type="text" id="id">
+     <input id="submit" type="submit" value="Submit">
+     </form>
+     <span id="receive"></span>
+     </body>
+     <script>
+     $('form').submit(function(e){
+     e.preventDefault();
+     $.ajax({
+      url:'do.njs',
+      data:{'id':$('#id').val()},
+      success:(data)=>{console.log("Welcome my group member:"); $('#receive').html(data);}
+     });
+     });
+     </script>  
+</html>
