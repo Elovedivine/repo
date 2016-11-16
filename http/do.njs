@@ -7,4 +7,4 @@ if(name[param.id]==undefined){
   console.log('<h1>Your id is not my group member,'+param.id+'!!!</h1>');
 }
 else
-console.log('<h1>Welcome my group member:'+name[param.id]+'</h1>');
+console.log('<h1>Hello,Welcome my group member:'+name[param.id]+'</h1>');

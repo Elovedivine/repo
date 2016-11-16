@@ -2,7 +2,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <html>
   <body>    
-    <p>Your Stundent ID</p>
+    <p>Your Stundent ID!!</p>
      <form>
      <input type="text" id="id">
      <input id="submit" type="submit" value="Submit">
@@ -15,7 +15,7 @@
      $.ajax({
       url:'do.njs',
       data:{'id':$('#id').val()},
-      success:(data)=>{console.log("Welcome my group member:"); $('#receive').html(data);}
+      success:(data)=>{console.log("hey!Welcome my group member:"); $('#receive').html(data);}
      });
      });
 
